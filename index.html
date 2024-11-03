@@ -1,114 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="box">
+        <h2 id="quesBox" >1=> this is the dummy question</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>best food delivery service of india</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 821px)" href="css/phone.css">
-</head>
-
-<body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="second.jpeg" alt="order your favourite meal now">
-        </div>
-        <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">contact us</a></li>
-            <li class="item"><a href="#">about us</a></li>
-            <li class="item"><a href="#">feedback</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <h1 class="h-primary">welcome to my online meal</h1>
-        <p class="center"> We provide the best food in the city with the best test and price....</p>
-        <p>50% off on the your first order...HURRY</p>
-        <button class="btn">order now</button>
-    </section>
-
-    <section class="services-container">
-        <h1 class="h-primary center">We provide the best food near you!</h1>
-        <div id="services">
-            <div class="box">
-                <img src="bottom_logo2.jpeg" alt="">
-                <h2 class="secondary center">order delicious
-                </h2>
-            </div>
-            <div class="box">
-                <img src="bottom_logo1.webp" alt="">
-                <h2 class="secondary center">cooking delicious
-                </h2>
-            </div>
-            <div class="box">
-                <img src="bottom_logo3.jpeg" alt="">
-                <h2 class="secondary center">Ready to go
-                </h2>
-            </div>
-        </div>
-    </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our clients</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="client_5.webp" alt="my client">
-            </div>
-            <div class="client-item">
-                <img src="client_2.webp" alt="my client">
-            </div>
-            <div class="client-item">
-                <img src="client_3.webp" alt="my client">
-            </div>
-            <div class="client-item">
-                <img src="client_2.webp" alt="my client">
-            </div>
-            <div class="client-item">
-                <img src="client_5.webp" alt="my client">
-            </div>
-
-        </div>
-    </section>
-    <section id="contact-us">
-        <h1 class="h-primary center">Contact us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name : </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="id">Id :</label>
-                    <input type="Id" name="name" id="name"  placeholder="Enter your email id">
-
-                </div>
-                <div class="form-group"> 
-
-                    <label for="name">Date of birth :</label>
-                    <input type="date of birth" name="name" id="name" placeholder="Enter your date of birth">
-                </div>
-                <div class="form-group">
-                    <label for="id">phone number :</label>
-                    <input type="phone" name="name" id="name" placeholder="Enter your phone number">
-
-                </div>
-                <div class="form-group">
-                    <label for="message">Enter your suggestion </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button class="submit">submit</button>
-                </div>
-
-            </form>
+        <div class="row">
+          <input class="options" id="option1" type="radio" value="a" name="option" />
+          <label for="option1">option 1</label>
         </div>
 
-    </section>
-    <footer>
-        <div class="center">
-            Copyright &copy; My onlineMeal.com All right reserved
+        <div class="row">
+          <input class="options" id="option2" type="radio" value="b" name="option" />
+          <label for="option2">option 2</label>
         </div>
-    </footer>
-
-</body>
-
+        <div class="row">
+          <input class="options" id="option3" type="radio" value="c" name="option" />
+          <label for="option3">option 3</label>
+        </div>
+        <div class="row">
+          <input class="options" id="option4" type="radio" value="d" name="option" />
+          <label for="option4">option 4</label>
+        </div>
+        <button class="btn" onclick="submitQuiz()">Submit</button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>
